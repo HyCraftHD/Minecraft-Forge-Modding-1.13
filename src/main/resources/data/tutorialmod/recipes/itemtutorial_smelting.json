@@ -1,0 +1,9 @@
+{
+	"type": "smelting",
+	"ingredient": {
+		"item": "tutorialmod:blocktutorial"
+	},
+	"result": "tutorialmod:itemtutorial",
+	"experience": 0.35,
+	"cookingtime": 20
+}

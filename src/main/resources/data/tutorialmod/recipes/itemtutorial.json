@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shaped",
+	"pattern": [
+		"DDD",
+		"D D",
+		"DDD"
+	],
+	"key": {
+		"D": {
+			"item": "minecraft:stone"
+		}
+	},
+	"result": {
+		"item": "tutorialmod:itemtutorial",
+		"count": 3
+	}
+}

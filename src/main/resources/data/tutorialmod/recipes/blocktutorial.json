@@ -1,0 +1,11 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "tutorialmod:itemtutorial"
+		}
+	],
+	"result": {
+		"item": "tutorialmod:blocktutorial"
+	}
+}
