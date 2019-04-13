@@ -1,4 +1,5 @@
 {
 	"itemGroup.tutorial": "Tutorial Tab",
-	"item.tutorialmod.itemtutorial":"Tutorial Item"
+	"item.tutorialmod.itemtutorial": "Tutorial Item",
+	"block.tutorialmod.blocktutorial": "Tutorial Block"
 }
