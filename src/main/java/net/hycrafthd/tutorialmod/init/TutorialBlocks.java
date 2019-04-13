@@ -13,22 +13,22 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @EventBusSubscriber(bus = Bus.MOD)
 public class TutorialBlocks {
-
+	
 	public static final BlockTutorial tutorial = new BlockTutorial();
-
+	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Block> event) {
 		IForgeRegistry<Block> registry = event.getRegistry();
-
+		
 		tutorial.setRegistryName(TutorialMod.modid, "blocktutorial");
 		registry.register(tutorial);
 	}
-
+	
 	@SubscribeEvent
 	public static void registerItem(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
-
+		
 		registry.register(new ItemBlockDefault(tutorial));
 	}
-
+	
 }

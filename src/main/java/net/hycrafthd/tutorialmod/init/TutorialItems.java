@@ -11,15 +11,15 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @EventBusSubscriber(bus = Bus.MOD)
 public class TutorialItems {
-
+	
 	public static final ItemTutorial tutorial = new ItemTutorial();
-
+	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
-
+		
 		tutorial.setRegistryName(TutorialMod.modid, "itemtutorial");
 		registry.register(tutorial);
 	}
-
+	
 }

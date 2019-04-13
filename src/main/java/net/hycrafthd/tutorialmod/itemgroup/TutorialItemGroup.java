@@ -7,15 +7,15 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class TutorialItemGroup extends ItemGroup {
-
+	
 	public TutorialItemGroup() {
 		super("tutorial");
 	}
-
+	
 	@OnlyIn(Dist.CLIENT)
 	@Override
 	public ItemStack createIcon() {
 		return new ItemStack(Blocks.CHISELED_RED_SANDSTONE);
 	}
-
+	
 }
