@@ -1,0 +1,15 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "tutorialmod:itemtutorial_hammer"
+		},
+		{
+			"item": "minecraft:stone"
+		}
+	],
+	"result": {
+		"item": "minecraft:stone_slab",
+		"count": 3
+	}
+}
