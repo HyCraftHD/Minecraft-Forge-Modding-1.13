@@ -1,7 +1,11 @@
 package net.hycrafthd.tutorialmod.tileentity;
 
+import net.hycrafthd.tutorialmod.TutorialMod;
+import net.hycrafthd.tutorialmod.container.ContainerTutorialStorage;
 import net.hycrafthd.tutorialmod.init.TutorialTileEntityTypes;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
@@ -10,8 +14,9 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.world.IInteractionObject;
 
-public class TileEntityTutorialStorage extends TileEntity implements IInventory {
+public class TileEntityTutorialStorage extends TileEntity implements IInventory, IInteractionObject {
 	
 	private final NonNullList<ItemStack> stacks;
 	
@@ -124,6 +129,16 @@ public class TileEntityTutorialStorage extends TileEntity implements IInventory 
 	@Override
 	public void clear() {
 		stacks.clear();
+	}
+	
+	@Override
+	public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
+		return new ContainerTutorialStorage(playerInventory, this);
+	}
+	
+	@Override
+	public String getGuiID() {
+		return TutorialMod.modid + ":tutorialstorage";
 	}
 	
 }
