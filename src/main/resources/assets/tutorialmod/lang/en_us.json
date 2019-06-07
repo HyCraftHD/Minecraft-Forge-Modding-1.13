@@ -6,5 +6,6 @@
 	"item.tutorialmod.itemtutorial_food_special": "Tutorial Food Special",
 	"item.tutorialmod.itemtutorial_hammer": "Tutorial Hammer",
 	"block.tutorialmod.blocktutorial_facing": "Tutorial Block Facing",
-	"block.tutorialmod.blocktutorial_storage": "Tutorial Block Storage"
+	"block.tutorialmod.blocktutorial_storage": "Tutorial Block Storage",
+	"inventory.tutorialmod.tutorialstorage": "Tutorial Storage"
 }
