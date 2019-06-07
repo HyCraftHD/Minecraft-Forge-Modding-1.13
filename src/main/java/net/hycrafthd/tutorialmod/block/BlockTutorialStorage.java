@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer.Builder;
@@ -61,6 +62,18 @@ public class BlockTutorialStorage extends Block {
 			final TileEntityTutorialStorage tutorialStorage = (TileEntityTutorialStorage) tileEntity;
 			NetworkHooks.openGui(playermp, tutorialStorage, pos);
 			return true;
+		}
+	}
+	
+	@Override
+	public void onReplaced(IBlockState state, World world, BlockPos pos, IBlockState newState, boolean isMoving) {
+		if (state.getBlock() != newState.getBlock()) {
+			final TileEntity tileEntity = world.getTileEntity(pos);
+			if (tileEntity instanceof TileEntityTutorialStorage) {
+				InventoryHelper.dropInventoryItems(world, pos, (TileEntityTutorialStorage) tileEntity);
+				world.updateComparatorOutputLevel(pos, this);
+			}
+			world.removeTileEntity(pos);
 		}
 	}
 }
