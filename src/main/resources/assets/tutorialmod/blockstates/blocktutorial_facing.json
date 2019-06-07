@@ -1,0 +1,27 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "tutorialmod:block/blocktutorial_facing"
+		},
+		"facing=south": {
+			"model": "tutorialmod:block/blocktutorial_facing",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "tutorialmod:block/blocktutorial_facing",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "tutorialmod:block/blocktutorial_facing",
+			"y": 90
+		},
+		"facing=up": {
+			"model": "tutorialmod:block/blocktutorial_facing",
+			"x": 270
+		},
+		"facing=down": {
+			"model": "tutorialmod:block/blocktutorial_facing",
+			"x": 90
+		}
+	}
+}

@@ -4,5 +4,6 @@
 	"block.tutorialmod.blocktutorial": "Tutorial Block",
 	"item.tutorialmod.itemtutorial_food": "Tutorial Food",
 	"item.tutorialmod.itemtutorial_food_special": "Tutorial Food Special",
-	"item.tutorialmod.itemtutorial_hammer": "Tutorial Hammer"
+	"item.tutorialmod.itemtutorial_hammer": "Tutorial Hammer",
+	"block.tutorialmod.blocktutorial_facing": "Tutorial Block Facing"
 }
