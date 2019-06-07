@@ -3,6 +3,7 @@ package net.hycrafthd.tutorialmod.init;
 import net.hycrafthd.tutorialmod.TutorialMod;
 import net.hycrafthd.tutorialmod.block.BlockTutorial;
 import net.hycrafthd.tutorialmod.block.BlockTutorialFacing;
+import net.hycrafthd.tutorialmod.block.BlockTutorialStorage;
 import net.hycrafthd.tutorialmod.item.ItemBlockDefault;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -19,6 +20,8 @@ public class TutorialBlocks {
 	
 	public static final BlockTutorialFacing tutorialfacing = new BlockTutorialFacing();
 	
+	public static final BlockTutorialStorage tutorialstorage = new BlockTutorialStorage();
+	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Block> event) {
 		IForgeRegistry<Block> registry = event.getRegistry();
@@ -28,6 +31,9 @@ public class TutorialBlocks {
 		
 		tutorialfacing.setRegistryName(TutorialMod.modid, "blocktutorial_facing");
 		registry.register(tutorialfacing);
+		
+		tutorialstorage.setRegistryName(TutorialMod.modid, "blocktutorial_storage");
+		registry.register(tutorialstorage);
 	}
 	
 	@SubscribeEvent
@@ -36,6 +42,7 @@ public class TutorialBlocks {
 		
 		registry.register(new ItemBlockDefault(tutorial));
 		registry.register(new ItemBlockDefault(tutorialfacing));
+		registry.register(new ItemBlockDefault(tutorialstorage));
 	}
 	
 }

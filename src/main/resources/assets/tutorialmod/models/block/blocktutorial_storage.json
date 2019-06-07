@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "tutorialmod:block/tutorialstorage_side",
+		"down": "tutorialmod:block/tutorialstorage_bottom",
+		"up": "tutorialmod:block/tutorialstorage_top",
+		"south": "tutorialmod:block/tutorialstorage_side",
+		"west": "tutorialmod:block/tutorialstorage_side",
+		"east": "tutorialmod:block/tutorialstorage_side",
+		"north": "tutorialmod:block/tutorialstorage_front"
+	}
+}
