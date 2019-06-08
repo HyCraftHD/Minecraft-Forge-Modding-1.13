@@ -5,11 +5,13 @@ import net.hycrafthd.tutorialmod.item.ItemTutorial;
 import net.hycrafthd.tutorialmod.item.ItemTutorialFood;
 import net.hycrafthd.tutorialmod.item.ItemTutorialFoodSpecial;
 import net.hycrafthd.tutorialmod.item.ItemTutorialHammer;
+import net.hycrafthd.tutorialmod.item.armor.ItemTutorialArmor;
 import net.hycrafthd.tutorialmod.item.tool.ItemTutorialAxe;
 import net.hycrafthd.tutorialmod.item.tool.ItemTutorialHoe;
 import net.hycrafthd.tutorialmod.item.tool.ItemTutorialPickaxe;
 import net.hycrafthd.tutorialmod.item.tool.ItemTutorialSpade;
 import net.hycrafthd.tutorialmod.item.tool.ItemTutorialSword;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -33,6 +35,11 @@ public class TutorialItems {
 	public static final ItemTutorialSpade tutorialSpade = new ItemTutorialSpade();
 	public static final ItemTutorialSword tutorialSword = new ItemTutorialSword();
 	
+	public static final ItemTutorialArmor tutorialHelmet = new ItemTutorialArmor(EntityEquipmentSlot.HEAD);
+	public static final ItemTutorialArmor tutorialChestplate = new ItemTutorialArmor(EntityEquipmentSlot.CHEST);
+	public static final ItemTutorialArmor tutorialLeggings = new ItemTutorialArmor(EntityEquipmentSlot.LEGS);
+	public static final ItemTutorialArmor tutorialBoots = new ItemTutorialArmor(EntityEquipmentSlot.FEET);
+	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
@@ -55,6 +62,12 @@ public class TutorialItems {
 		tutorialSpade.setRegistryName(TutorialMod.modid, "itemtutorial_shovel");
 		tutorialSword.setRegistryName(TutorialMod.modid, "itemtutorial_sword");
 		registry.registerAll(tutorialAxe, tutorialHoe, tutorialPickaxe, tutorialSpade, tutorialSword);
+		
+		tutorialHelmet.setRegistryName(TutorialMod.modid, "itemtutorial_helmet");
+		tutorialChestplate.setRegistryName(TutorialMod.modid, "itemtutorial_chestplate");
+		tutorialLeggings.setRegistryName(TutorialMod.modid, "itemtutorial_leggings");
+		tutorialBoots.setRegistryName(TutorialMod.modid, "itemtutorial_boots");
+		registry.registerAll(tutorialHelmet, tutorialChestplate, tutorialLeggings, tutorialBoots);
 	}
 	
 }

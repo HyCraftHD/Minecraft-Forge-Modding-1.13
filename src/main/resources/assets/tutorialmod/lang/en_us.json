@@ -12,5 +12,9 @@
 	"item.tutorialmod.itemtutorial_hoe": "Tutorial Hoe",
 	"item.tutorialmod.itemtutorial_pickaxe": "Tutorial Pickaxe",
 	"item.tutorialmod.itemtutorial_shovel": "Tutorial Shovel",
-	"item.tutorialmod.itemtutorial_sword": "Tutorial Sword"
+	"item.tutorialmod.itemtutorial_sword": "Tutorial Sword",
+	"item.tutorialmod.itemtutorial_helmet": "Tutorial Helmet",
+	"item.tutorialmod.itemtutorial_chestplate": "Tutorial Chestplate",
+	"item.tutorialmod.itemtutorial_leggings": "Tutorial Leggings",
+	"item.tutorialmod.itemtutorial_boots": "Tutorial Boots"
 }
