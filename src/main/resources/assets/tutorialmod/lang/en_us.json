@@ -7,5 +7,10 @@
 	"item.tutorialmod.itemtutorial_hammer": "Tutorial Hammer",
 	"block.tutorialmod.blocktutorial_facing": "Tutorial Block Facing",
 	"block.tutorialmod.blocktutorial_storage": "Tutorial Block Storage",
-	"inventory.tutorialmod.tutorialstorage": "Tutorial Storage"
+	"inventory.tutorialmod.tutorialstorage": "Tutorial Storage",
+	"item.tutorialmod.itemtutorial_axe": "Tutorial Axe",
+	"item.tutorialmod.itemtutorial_hoe": "Tutorial Hoe",
+	"item.tutorialmod.itemtutorial_pickaxe": "Tutorial Pickaxe",
+	"item.tutorialmod.itemtutorial_shovel": "Tutorial Shovel",
+	"item.tutorialmod.itemtutorial_sword": "Tutorial Sword"
 }
