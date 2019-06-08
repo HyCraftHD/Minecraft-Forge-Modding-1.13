@@ -45,7 +45,7 @@ public class BlockTutorialStorage extends Block {
 	
 	@Override
 	public TileEntity createTileEntity(IBlockState state, IBlockReader world) {
-		return TutorialTileEntityTypes.tutorialstorage.create();
+		return TutorialTileEntityTypes.tutorialStorage.create();
 	}
 	
 	@Override

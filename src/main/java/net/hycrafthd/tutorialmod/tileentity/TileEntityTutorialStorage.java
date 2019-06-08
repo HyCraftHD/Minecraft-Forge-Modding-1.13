@@ -21,7 +21,7 @@ public class TileEntityTutorialStorage extends TileEntity implements IInventory,
 	private final NonNullList<ItemStack> stacks;
 	
 	public TileEntityTutorialStorage() {
-		super(TutorialTileEntityTypes.tutorialstorage);
+		super(TutorialTileEntityTypes.tutorialStorage);
 		stacks = NonNullList.withSize(18, ItemStack.EMPTY);
 	}
 	

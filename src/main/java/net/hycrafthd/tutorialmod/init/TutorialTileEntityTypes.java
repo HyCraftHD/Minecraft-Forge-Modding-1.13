@@ -12,13 +12,13 @@ import net.minecraftforge.registries.IForgeRegistry;
 @EventBusSubscriber(bus = Bus.MOD)
 public class TutorialTileEntityTypes {
 	
-	public static final TileEntityType<TileEntityTutorialStorage> tutorialstorage = TileEntityType.Builder.create(TileEntityTutorialStorage::new).build(null);
+	public static final TileEntityType<TileEntityTutorialStorage> tutorialStorage = TileEntityType.Builder.create(TileEntityTutorialStorage::new).build(null);
 	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<TileEntityType<?>> event) {
 		IForgeRegistry<TileEntityType<?>> registry = event.getRegistry();
 		
-		tutorialstorage.setRegistryName(TutorialMod.modid, "tutorialstorage");
-		registry.register(tutorialstorage);
+		tutorialStorage.setRegistryName(TutorialMod.modid, "tutorialstorage");
+		registry.register(tutorialStorage);
 	}
 }

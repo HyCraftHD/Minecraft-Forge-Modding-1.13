@@ -18,9 +18,9 @@ public class TutorialBlocks {
 	
 	public static final BlockTutorial tutorial = new BlockTutorial();
 	
-	public static final BlockTutorialFacing tutorialfacing = new BlockTutorialFacing();
+	public static final BlockTutorialFacing tutorialFacing = new BlockTutorialFacing();
 	
-	public static final BlockTutorialStorage tutorialstorage = new BlockTutorialStorage();
+	public static final BlockTutorialStorage tutorialStorage = new BlockTutorialStorage();
 	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Block> event) {
@@ -29,11 +29,11 @@ public class TutorialBlocks {
 		tutorial.setRegistryName(TutorialMod.modid, "blocktutorial");
 		registry.register(tutorial);
 		
-		tutorialfacing.setRegistryName(TutorialMod.modid, "blocktutorial_facing");
-		registry.register(tutorialfacing);
+		tutorialFacing.setRegistryName(TutorialMod.modid, "blocktutorial_facing");
+		registry.register(tutorialFacing);
 		
-		tutorialstorage.setRegistryName(TutorialMod.modid, "blocktutorial_storage");
-		registry.register(tutorialstorage);
+		tutorialStorage.setRegistryName(TutorialMod.modid, "blocktutorial_storage");
+		registry.register(tutorialStorage);
 	}
 	
 	@SubscribeEvent
@@ -41,8 +41,8 @@ public class TutorialBlocks {
 		IForgeRegistry<Item> registry = event.getRegistry();
 		
 		registry.register(new ItemBlockDefault(tutorial));
-		registry.register(new ItemBlockDefault(tutorialfacing));
-		registry.register(new ItemBlockDefault(tutorialstorage));
+		registry.register(new ItemBlockDefault(tutorialFacing));
+		registry.register(new ItemBlockDefault(tutorialStorage));
 	}
 	
 }
