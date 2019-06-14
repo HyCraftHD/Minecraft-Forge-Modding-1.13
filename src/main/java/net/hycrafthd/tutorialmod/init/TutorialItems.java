@@ -4,6 +4,7 @@ import net.hycrafthd.tutorialmod.TutorialMod;
 import net.hycrafthd.tutorialmod.item.ItemTutorial;
 import net.hycrafthd.tutorialmod.item.ItemTutorialFood;
 import net.hycrafthd.tutorialmod.item.ItemTutorialFoodSpecial;
+import net.hycrafthd.tutorialmod.item.ItemTutorialGrenade;
 import net.hycrafthd.tutorialmod.item.ItemTutorialHammer;
 import net.hycrafthd.tutorialmod.item.armor.ItemTutorialArmor;
 import net.hycrafthd.tutorialmod.item.tool.ItemTutorialAxe;
@@ -40,6 +41,8 @@ public class TutorialItems {
 	public static final ItemTutorialArmor tutorialLeggings = new ItemTutorialArmor(EntityEquipmentSlot.LEGS);
 	public static final ItemTutorialArmor tutorialBoots = new ItemTutorialArmor(EntityEquipmentSlot.FEET);
 	
+	public static final ItemTutorialGrenade tutorialGrenade = new ItemTutorialGrenade();
+	
 	@SubscribeEvent
 	public static void register(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
@@ -68,6 +71,9 @@ public class TutorialItems {
 		tutorialLeggings.setRegistryName(TutorialMod.modid, "itemtutorial_leggings");
 		tutorialBoots.setRegistryName(TutorialMod.modid, "itemtutorial_boots");
 		registry.registerAll(tutorialHelmet, tutorialChestplate, tutorialLeggings, tutorialBoots);
+		
+		tutorialGrenade.setRegistryName(TutorialMod.modid, "itemtutorial_grenade");
+		registry.register(tutorialGrenade);
 	}
 	
 }
